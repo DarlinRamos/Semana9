@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Elemento</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .elemento {
+            display: none; 
+            margin-bottom: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#mostrarOcultar').click(function() {
+                $('.elemento').toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Mostrar/Ocultar Elemento</h1>
+    <p class="elemento">La cultura coreana es rica, diversa y fascinante, con una historia que se remonta a miles de años. Con una mezcla de tradiciones arraigadas y una influencia moderna, la cultura coreana ha cautivado a personas de todo el mundo.</p>
+    <div class="button-container">
+        <button id="mostrarOcultar">Mostrar/Ocultar Elemento</button>
+    </div>
+</body>
+</html>

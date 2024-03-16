@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de cambio de color al pasar el mouse con jQuery</title>
+<style>
+  
+  .cambiar-color {
+    background-color: yellow;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $("ul li").mouseenter(function(){
+    $(this).addClass("cambiar-color");
+  });
+  
+  
+  $("ul li").mouseleave(function(){
+    $(this).removeClass("cambiar-color");
+  });
+});
+</script>
+</head>
+<body>
+
+<ul>
+  <li>Friends</li>
+  <li>Smart</li>
+  <li>The Climb</li>
+  <li>Eta</li>
+</ul>
+
+</body>
+</html>

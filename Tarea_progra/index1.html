@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Color de Texto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#cambiarColor').click(function() {
+                var colores = ['#ff0000', '#00ff00', '#0000ff']; 
+                var colorAleatorio = colores[Math.floor(Math.random() * colores.length)]; 
+                $('p').css('color', colorAleatorio); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Cambiar Color de Texto</h1>
+    <p>Ella es muy linda.</p>
+    <p>Ella es mi madre.</p>
+    <p>Y ella es la estrella que mi camino abre</p>
+    <div class="button-container">
+        <button id="cambiarColor">Cambiar Color de Texto</button>
+    </div>
+</body>
+</html>

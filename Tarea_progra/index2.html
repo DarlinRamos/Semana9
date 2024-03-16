@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de cambio de texto con jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#boton").click(function(){
+    $("#parrafo").text("Nuevo texto del párrafo");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="parrafo">Texto inicial del párrafo</p>
+<button id="boton">Cambiar Texto</button>
+
+</body>
+</html>
